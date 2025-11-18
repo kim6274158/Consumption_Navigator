@@ -1,0 +1,12 @@
+fastapi
+uvicorn[standard]
+pymysql
+langchain
+langchain-openai
+langchain-core
+mcp
+langchain-mcp-adapters
+python-dotenv
+pydantic
+openai
+langgraph

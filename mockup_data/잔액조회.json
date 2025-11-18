@@ -1,0 +1,232 @@
+{
+    "api_info": {
+        "endpoint": "https://openapi.openbanking.or.kr/v2.0/account/balance/fin_num",
+        "method": "GET"
+    },
+    "request": {
+        "headers": {
+            "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdWQiOiIxMTAxMDAwMDAwIiwic2NvcGUiOlsiaW5xdWlyeSJdLCJpc3MiOiJodHRwczovL3d3dy5vcGVuYmFua2luZy5vci5rciIsImV4cCI6MTU0ODY1MDE1MCwianRpIjoiNmUxYTk1NjAtMzU4Yi00N2IxLWEzYjUtNjBiMjE1MDQ2ZTczIn0.ZDk5LSlsZ_vXe3V0KPsXBR5Lq9eDvWzn-HmC2N7TqOc",
+            "Content-Type": "application/json; charset=UTF-8"
+        },
+        "parameters": {
+            "fintech_use_num": "120190910000000000000001",
+            "bank_tran_id": "F123456789U4BC34239Z",
+            "tran_dtime": "20250131154530"
+        }
+    },
+    "response_success_examples": [
+        {
+            "description": "수시입출금 계좌 (일반 입출금통장)",
+            "data": {
+                "api_tran_id": "2ffd133a-d17a-431d-a6a5-4bc12345abcd",
+                "api_tran_dtm": "20250131154530567",
+                "rsp_code": "A0000",
+                "rsp_message": "정상처리되었습니다",
+                "bank_tran_id": "F123456789U4BC34239Z",
+                "bank_tran_date": "20250131",
+                "bank_code_tran": "097",
+                "bank_rsp_code": "000",
+                "bank_rsp_message": "정상",
+                "bank_name": "오픈은행",
+                "savings_bank_name": "",
+                "fintech_use_num": "120190910000000000000001",
+                "balance_amt": "2547800",
+                "available_amt": "2547800",
+                "account_type": "1",
+                "product_name": "자유입출금통장",
+                "account_issue_date": "20200315",
+                "maturity_date": "",
+                "last_tran_date": "20250131"
+            }
+        },
+        {
+            "description": "예적금 계좌 (정기예금)",
+            "data": {
+                "api_tran_id": "3aae244c-e28c-542f-c7c7-82de46781efg",
+                "api_tran_dtm": "20250131154530567",
+                "rsp_code": "A0000",
+                "rsp_message": "정상처리되었습니다",
+                "bank_tran_id": "F123456789U4BC34239Z",
+                "bank_tran_date": "20250131",
+                "bank_code_tran": "097",
+                "bank_rsp_code": "000",
+                "bank_rsp_message": "정상",
+                "bank_name": "오픈은행",
+                "savings_bank_name": "",
+                "fintech_use_num": "120190910000000000000002",
+                "balance_amt": "10000000",
+                "available_amt": "0",
+                "account_type": "2",
+                "product_name": "알뜰살뜰정기예금",
+                "account_issue_date": "20240201",
+                "maturity_date": "20260201",
+                "last_tran_date": "20240201"
+            }
+        },
+        {
+            "description": "적립식 적금 계좌",
+            "data": {
+                "api_tran_id": "4bbf355d-f39d-653g-d8d8-93ef57892fhi",
+                "api_tran_dtm": "20250131154530567",
+                "rsp_code": "A0000",
+                "rsp_message": "정상처리되었습니다",
+                "bank_tran_id": "F123456789U4BC34239Z",
+                "bank_tran_date": "20250131",
+                "bank_code_tran": "097",
+                "bank_rsp_code": "000",
+                "bank_rsp_message": "정상",
+                "bank_name": "오픈은행",
+                "savings_bank_name": "",
+                "fintech_use_num": "120190910000000000000003",
+                "balance_amt": "6500000",
+                "available_amt": "6500000",
+                "account_type": "2",
+                "product_name": "내일을위한적금",
+                "account_issue_date": "20230801",
+                "maturity_date": "20250801",
+                "last_tran_date": "20250101"
+            }
+        },
+        {
+            "description": "수익증권 계좌 (펀드)",
+            "data": {
+                "api_tran_id": "5ccg466e-g40e-764h-e9e9-04fg68903gij",
+                "api_tran_dtm": "20250131154530567",
+                "rsp_code": "A0000",
+                "rsp_message": "정상처리되었습니다",
+                "bank_tran_id": "F123456789U4BC34239Z",
+                "bank_tran_date": "20250131",
+                "bank_code_tran": "097",
+                "bank_rsp_code": "000",
+                "bank_rsp_message": "정상",
+                "bank_name": "오픈증권",
+                "savings_bank_name": "",
+                "fintech_use_num": "120190910000000000000004",
+                "balance_amt": "15234567",
+                "available_amt": "15234567",
+                "account_type": "6",
+                "product_name": "글로벌성장주식펀드",
+                "account_issue_date": "20220315",
+                "maturity_date": "",
+                "last_tran_date": "20250130"
+            }
+        },
+        {
+            "description": "마이너스 잔액 계좌 (마통, 대출계좌 등)",
+            "data": {
+                "api_tran_id": "6ddh577f-h51f-875i-f0f0-15gh79014hjk",
+                "api_tran_dtm": "20250131154530567",
+                "rsp_code": "A0000",
+                "rsp_message": "정상처리되었습니다",
+                "bank_tran_id": "F123456789U4BC34239Z",
+                "bank_tran_date": "20250131",
+                "bank_code_tran": "097",
+                "bank_rsp_code": "000",
+                "bank_rsp_message": "정상",
+                "bank_name": "오픈은행",
+                "savings_bank_name": "",
+                "fintech_use_num": "120190910000000000000005",
+                "balance_amt": "-3450000",
+                "available_amt": "1550000",
+                "account_type": "1",
+                "product_name": "마이너스통장",
+                "account_issue_date": "20210601",
+                "maturity_date": "",
+                "last_tran_date": "20250130"
+            }
+        },
+        {
+            "description": "저축은행 계좌",
+            "data": {
+                "api_tran_id": "7eei688g-i62g-986j-g1g1-26hi80125ikl",
+                "api_tran_dtm": "20250131154530567",
+                "rsp_code": "A0000",
+                "rsp_message": "정상처리되었습니다",
+                "bank_tran_id": "F123456789U4BC34239Z",
+                "bank_tran_date": "20250131",
+                "bank_code_tran": "097",
+                "bank_rsp_code": "000",
+                "bank_rsp_message": "정상",
+                "bank_name": "오픈저축은행",
+                "savings_bank_name": "오픈저축은행강남지점",
+                "fintech_use_num": "120190910000000000000006",
+                "balance_amt": "5000000",
+                "available_amt": "5000000",
+                "account_type": "2",
+                "product_name": "고금리정기예금",
+                "account_issue_date": "20241115",
+                "maturity_date": "20251115",
+                "last_tran_date": "20241115"
+            }
+        }
+    ],
+    "response_error_examples": [
+        {
+            "description": "핀테크이용번호 미등록",
+            "data": {
+                "api_tran_id": "8ffj799h-j73h-097k-h2h2-37ij91236jlm",
+                "api_tran_dtm": "20250131154530567",
+                "rsp_code": "A0003",
+                "rsp_message": "해당 핀테크이용번호는 등록되지 않았습니다",
+                "bank_tran_id": "",
+                "bank_tran_date": "",
+                "bank_code_tran": "",
+                "bank_rsp_code": "",
+                "bank_rsp_message": ""
+            }
+        },
+        {
+            "description": "계좌 실명번호 불일치",
+            "data": {
+                "api_tran_id": "9ggk800i-k84i-108l-i3i3-48jk02347kmn",
+                "api_tran_dtm": "20250131154530567",
+                "rsp_code": "A0004",
+                "rsp_message": "등록된 계좌와 실명번호가 일치하지 않습니다",
+                "bank_tran_id": "",
+                "bank_tran_date": "",
+                "bank_code_tran": "",
+                "bank_rsp_code": "",
+                "bank_rsp_message": ""
+            }
+        },
+        {
+            "description": "은행 거래고유번호 오류",
+            "data": {
+                "api_tran_id": "0hhl911j-l95j-219m-j4j4-59kl13458lno",
+                "api_tran_dtm": "20250131154530567",
+                "rsp_code": "A0001",
+                "rsp_message": "거래고유번호(참가기관) 오류",
+                "bank_tran_id": "",
+                "bank_tran_date": "",
+                "bank_code_tran": "",
+                "bank_rsp_code": "",
+                "bank_rsp_message": ""
+            }
+        }
+    ],
+    "notes": {
+        "account_type": {
+            "1": "수시입출금 (자유입출금통장, 보통예금 등)",
+            "2": "예적금 (정기예금, 정기적금, 자유적금 등)",
+            "6": "수익증권 (펀드, 투자신탁 등)"
+        },
+        "balance_amt": "계좌잔액 (마이너스 통장의 경우 음수 가능)",
+        "available_amt": "실제 출금 가능한 금액",
+        "maturity_date": "만기일이 없는 상품(수시입출금, 펀드 등)은 빈 문자열",
+        "common_response_codes": {
+            "A0000": "정상처리",
+            "A0001": "거래고유번호(참가기관) 오류",
+            "A0002": "핀테크이용번호 오류",
+            "A0003": "핀테크이용번호 미등록",
+            "A0004": "등록된 계좌와 실명번호 불일치",
+            "A0005": "API 이용기관 정보 오류",
+            "A0006": "기 등록된 계좌",
+            "A0007": "IP 주소 오류"
+        },
+        "request_fields": {
+            "fintech_use_num": "조회할 계좌의 핀테크이용번호 (24자리)",
+            "bank_tran_id": "은행거래고유번호 (이용기관에서 생성, 20자리)",
+            "tran_dtime": "요청일시 (YYYYMMDDhhmmss, 14자리)"
+        }
+    }
+}

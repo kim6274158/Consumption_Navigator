@@ -1,0 +1,22 @@
+{
+    "api_tran_id": "T1234567890C000000000003",
+    "api_tran_dtm": "20251112224018890",
+    "rsp_code": "A0000",
+    "rsp_message": "정상처리되었습니다",
+    "bank_tran_id": "F765432109U4BC34239Z",
+    "bank_tran_date": "20251112",
+    "bank_code_tran": "097",
+    "bank_rsp_code": "000",
+    "bank_rsp_message": "정상",
+    "fintech_use_num": "123456789012345678901234",
+    "card_num": "4321********1234",
+    "card_name": "오픈카드 Visa 플래티넘",
+    "card_member_type": "1",
+    "card_type": "1",
+    "card_status": "01",
+    "card_issue_date": "20220315",
+    "card_exp_date": "202703",
+    "card_brand": "Visa",
+    "card_corp_name": "오픈카드",
+    "corp_code": "002"
+}
