@@ -12,8 +12,6 @@
 - **Framework**: React  
 - **Bundler / Dev Server**: Vite 또는 CRA  
 - **Styling**: CSS (컴포넌트별 세부 스타일 분리)  
-- **State 관리**: React Hooks  
-
 ---
 
 ## 2. 실행 방법
