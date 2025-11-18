@@ -36,7 +36,8 @@ npm start       # (CRA 기반일 경우)
 
 ---
 
-## 2. 실행 방법
+## 3. 실행 방법
+
 
 Consumption_Navigator/
 ├── public/                  # 정적 파일 (favicon, index.html 등)
@@ -90,4 +91,4 @@ Consumption_Navigator/
 ├── tsconfig.json
 ├── .gitignore
 └── README.md
-
+---
