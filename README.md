@@ -1,5 +1,5 @@
 # Consumption_Navigator
-소비게이터_ https://www.figma.com/design/0PhboyeYrirTT4rXMNV6cX/Untitled?node-id=0-1&t=HsnEfPhW9973E9Gr-1
+소비게이터 추가 기획 피그마 링크_ https://www.figma.com/design/0PhboyeYrirTT4rXMNV6cX/Untitled?node-id=0-1&t=HsnEfPhW9973E9Gr-1
 # 🧭 Olla: 현명한 금융 생활을 안내하는 AI 항해사
 **2025년 새싹 해커톤(SeSAC Hackathon) AI 서비스 기획서**
 
