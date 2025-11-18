@@ -1,0 +1,230 @@
+/* 트렌드 & 패턴 컴포넌트 전체 컨테이너 */
+.trend {
+  width: min(960px, 100% - 72px);
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  box-sizing: border-box;
+}
+
+/* 상단 헤더 영역 */
+.trend__header {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 8px;
+}
+
+/* 헤더 내부 타이틀 영역 */
+.trend__headline {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+/* "트렌드 & 패턴" 제목 */
+.trend__headline h2 {
+  margin: 0;
+  font-size: 22px;
+  font-weight: 600;
+  color: #4a4a4a;
+  letter-spacing: -0.03em;
+}
+
+/* 메인 카드 영역 */
+.trend__card {
+  width: 100%;
+  background-color: #fff5d1;
+  border-radius: 24px;
+  padding: 48px 0 0;
+  box-shadow: 0px 4px 4px 0px rgba(145, 145, 145, 0.08);
+  box-sizing: border-box;
+  min-height: 500px;
+}
+
+/* 카드 내부 컨텐츠 */
+.trend__content {
+  display: flex;
+  gap: 0;
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 100%;
+  min-height: 500px;
+}
+
+/* 각 섹션 (라이프 스타일, 나이 대비) */
+.trend__section {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 0;
+  padding: 0;
+  min-height: 500px;
+}
+
+/* 섹션 헤더 */
+.trend__section-header {
+  display: flex;
+  flex-direction: column;
+  align-self: stretch;
+  padding: 0 36px;
+  gap: 0;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* 섹션 제목 */
+.trend__section-title {
+  margin: 0;
+  font-size: 22px;
+  font-weight: 550;
+  color: #5e5e5e;
+  line-height: 1.4;
+  letter-spacing: -0.025em;
+}
+
+/* 섹션 부제목 */
+.trend__section-subtitle {
+  margin: 0;
+  font-size: 36px;
+  font-weight: 700;
+  color: #2b2b2b;
+  line-height: 1.4;
+  letter-spacing: -0.025em;
+}
+
+/* 통계 영역 */
+.trend__stats {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-self: stretch;
+  padding: 36px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* 통계 아이템 */
+.trend__stat-item {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+/* 통계 행 */
+.trend__stat-row {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+/* 통계 라벨과 값 */
+.trend__stat-label-value {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+/* 통계 라벨 */
+.trend__stat-label {
+  font-size: 26px;
+  font-weight: 550;
+  color: #5e5e5e;
+  line-height: 1.4;
+  letter-spacing: -0.025em;
+}
+
+/* 통계 값 */
+.trend__stat-value {
+  font-size: 36px;
+  font-weight: 600;
+  color: #2b2b2b;
+  line-height: 1.4;
+  letter-spacing: -0.025em;
+}
+
+/* 통계 설명 */
+.trend__stat-desc {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 500;
+  color: #5e5e5e;
+  line-height: 1.4;
+  letter-spacing: -0.025em;
+}
+
+/* 화살표 아이콘 */
+.trend__stat-arrow {
+  width: 40px;
+  height: 40px;
+  flex-shrink: 0;
+  object-fit: contain;
+}
+
+/* 이미지 래퍼 */
+.trend__image-wrapper {
+  width: 100%;
+  height: 350px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0;
+  flex-shrink: 0;
+  margin-top: -80px;
+  margin-left: 50px;
+  overflow: visible;
+}
+
+/* 이미지 */
+.trend__image {
+  width: 110%;
+  height: 110%;
+  object-fit: contain;
+  transform: translate(0, 0);
+}
+
+/* 반응형 디자인 - 태블릿 */
+@media (max-width: 1024px) {
+  .trend__content {
+    flex-direction: column;
+  }
+
+  .trend__section {
+    min-height: auto;
+    padding-bottom: 36px;
+  }
+}
+
+/* 반응형 디자인 - 모바일 */
+@media (max-width: 768px) {
+  .trend__header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+  }
+
+  .trend__card {
+    padding: 36px 0 0;
+  }
+
+  .trend__section {
+    padding: 0 24px 24px;
+  }
+
+  .trend__section-header {
+    padding: 0 24px;
+  }
+
+  .trend__stats {
+    padding: 0 24px;
+  }
+
+  .trend__image-wrapper {
+    padding: 0 24px;
+    height: 250px;
+  }
+}
+

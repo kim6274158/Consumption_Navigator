@@ -1,0 +1,56 @@
+/* 페이지 전체 */
+.mypage-main {
+  width: 100%;
+  min-height: 100vh;
+  padding: 48px 24px 80px;
+  box-sizing: border-box;
+  background: #ffffff;
+}
+
+.mypage-content {
+  width: min(1080px, 100%);
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+/* 헤더 아래 검색바 위치 */
+.mypage-search-section {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding-top: 12px;
+  box-sizing: border-box;
+}
+
+.mypage-profile-section {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.mypage-month-status-section {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 32px; /* 이번달 현황과 트렌드 사이 간격 조정 - 이 값을 수정하면 됩니다 */
+}
+
+.mypage-trend-section {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+@media (max-width: 768px) {
+  .mypage-main {
+    padding: 32px 16px 64px;
+  }
+
+  .mypage-content {
+    gap: 24px;
+  }
+}
+
+

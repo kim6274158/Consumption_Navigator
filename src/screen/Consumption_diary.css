@@ -1,0 +1,136 @@
+@import url("https://fonts.googleapis.com/css2?family=Pretendard:wght@400;500;600;700&display=swap");
+
+/* --------------------------------------------- */
+/* 📌 1. 전체 페이지 레이아웃 */
+/* --------------------------------------------- */
+.consumption-diary-main {
+  width: 100%;
+  min-height: 100vh;
+  padding: 48px 24px 80px; /* ← 페이지 상하좌우 패딩 조절 */
+  box-sizing: border-box;
+  background: #ffffff;
+}
+
+/* 중앙 컨텐츠 컨테이너 (마이페이지와 동일 구조) */
+.consumption-diary-content {
+  width: min(1080px, 100%); /* ← 전체 폭 조절 */
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 48px; /* ← 컴포넌트들 간 간격 조절 */
+}
+
+/* --------------------------------------------- */
+/* 📌 2. 공통: 모든 섹션을 가운데 정렬 */
+/* --------------------------------------------- */
+.section-center {
+  width: 100%;
+  display: flex;
+  justify-content: center; /* ← 수평 중앙정렬 */
+  box-sizing: border-box;
+}
+
+/* 내부 실제 컨텐츠 폭 (마이페이지 프로필과 동일) */
+.section-inner {
+  width: min(960px, 100% - 72px); /* ← 가로 폭 조절 */
+  display: flex;
+  flex-direction: column;
+  gap: 12px; /* ← 내부 요소 간 간격 */
+}
+
+/* --------------------------------------------- */
+/* 📌 3. 올해의 현황 */
+/* --------------------------------------------- */
+
+/* 제목 텍스트 */
+.consumption-overview__title {
+  margin: 0;
+  font-size: 22px;
+  font-weight: 600;
+  color: #4a4a4a;
+  letter-spacing: -0.03em;
+}
+
+/* 부제목 */
+.consumption-overview__subtitle {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 600;
+  color: #5e5e5e;
+}
+
+/* 설명 텍스트 */
+.consumption-overview__description {
+  margin: 0;
+  font-size: 18px;
+  color: #7d7d7d;
+}
+
+/* 범례 전체 컨테이너 */
+.consumption-overview__legend {
+  display: flex;
+  align-items: center;
+  gap: 16px; /* ← 범례 아이템 간 간격 */
+  margin-top: 8px;
+}
+
+/* 범례 아이템 */
+.legend-item {
+  display: flex;
+  align-items: center;
+  gap: 6px; /* ← 아이콘-텍스트 간격 */
+  font-size: 15px;
+  color: #6b6b6b;
+}
+
+/* 범례 아이콘 크기 */
+.legend-item img {
+  width: 16px;
+  height: 16px;
+  object-fit: contain;
+}
+
+/* --------------------------------------------- */
+/* 📌 4. 그래프 이미지 */
+/* --------------------------------------------- */
+.consumption-graph {
+  width: min(960px, 100% - 72px); /* ← 그래프 폭 */
+  margin: -100px auto 40px;
+  display: block;
+  margin-bottom: 20px;
+
+}
+
+/* --------------------------------------------- */
+/* 📌 5. MonthStatus 스타일 적용 섹션 래퍼 */
+/* (11월 요약 & AI 일기 영역을 가운데 정렬) */
+/* --------------------------------------------- */
+.consumption-month-status-section {
+  width: 100%;
+  display: flex;
+  justify-content: center; /* ← MonthStatus 중앙 배치 */
+  margin-bottom: 10px; /* ← 아래 여백 */
+}
+
+/* --------------------------------------------- */
+/* 📌 6. 반응형 설정 */
+/* --------------------------------------------- */
+
+@media (max-width: 768px) {
+  /* 모바일에서 전체 패딩 축소 */
+  .consumption-diary-main {
+    padding: 32px 16px 64px;
+  }
+
+  /* 컴포넌트 간 간격 축소 */
+  .consumption-diary-content {
+    gap: 32px;
+  }
+
+  /* 내부 폭 100%로 확장 */
+  .section-inner,
+  .consumption-graph {
+    width: 100%;
+  }
+}
+

@@ -1,26 +1,28 @@
-import React from 'react';
-import logo from './logo.svg';
+// src/App.tsx
+import React, { useState } from 'react';
+import Header, { MenuKey } from './components/Header';
+import Mypage from './screen/Mypage';
+import CardRecommendation from './screen/Card_Recommendation';
+import ConsumptionDiary from './screen/Consumption_diary';
 import './App.css';
 
 function App() {
+  const [activeMenu, setActiveMenu] = useState<MenuKey>('마이페이지');
+
+  const handleMenuClick = (menu: MenuKey) => {
+    setActiveMenu(menu);
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app-root">
+      <Header activeMenu={activeMenu} onMenuClick={handleMenuClick} />
+
+      {activeMenu === '마이페이지' && <Mypage />}
+      {activeMenu === '카드 추천' && <CardRecommendation />}
+      {activeMenu === '소비일기' && <ConsumptionDiary />}
     </div>
   );
 }
 
 export default App;
+

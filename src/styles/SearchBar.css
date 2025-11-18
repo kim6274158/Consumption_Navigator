@@ -1,0 +1,102 @@
+/* 실제 검색바 박스 */
+/* 헤더보다 살짝 좁게: 최대 960px, 화면 작으면 자동으로 줄어듦 */
+.searchbar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 12px 20px 12px 24px;
+
+  width: min(960px, 100% - 72px); /* 🔥 폭 축소 + 좌우 여백 확보 */
+  height: 64px;                   /* 80px → 조금 낮춰서 과하게 커보이지 않게 */
+
+  background: #F7F7F7;
+  border-radius: 240px;
+
+  box-sizing: border-box;
+}
+
+/* 입력창 (placeholder로 안내문구 표시) */
+.searchbar-input {
+  flex: 1;
+  border: none;
+  outline: none;
+  background: transparent;
+
+  font-family: 'YES24', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 140%;
+  letter-spacing: -0.025em;
+  color: #555555;
+
+  min-width: 0; /* flex 안에서 줄바꿈 방지 */
+}
+
+.searchbar-input::placeholder {
+  color: #919191;
+}
+
+/* 돋보기 버튼 */
+.searchbar-icon-button {
+  border: none;
+  background: transparent;
+  padding: 0;
+  margin-left: 12px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  cursor: pointer;
+}
+
+/* 돋보기 아이콘 */
+.searchbar-icon {
+  width: 24px;   /* 32px → 살짝 줄여서 부담 덜하게 */
+  height: 24px;
+}
+
+/* ---------------- 모달 스타일 ---------------- */
+
+.search-modal-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.35);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+}
+
+.search-modal {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 24px 32px;
+  box-sizing: border-box;
+  min-width: 280px;
+  max-width: 400px;
+  text-align: center;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.16);
+}
+
+.search-modal-text {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.search-modal-close {
+  margin-top: 16px;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 8px;
+  background: #f47264;
+  color: #ffffff;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+

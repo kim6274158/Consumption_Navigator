@@ -1,0 +1,320 @@
+/* 이번 달 현황 컴포넌트 전체 컨테이너 */
+.month-status {
+  width: min(960px, 100% - 72px);
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  box-sizing: border-box;
+}
+
+/* 상단 타이틀 영역 */
+.month-status__header {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 16px;
+}
+
+/* 헤더 내부 타이틀 영역 */
+.month-status__headline {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+/* "이번 달 현황" 제목 */
+.month-status__headline h2 {
+  margin: 0;
+  font-size: 22px;
+  font-weight: 600;
+  color: #4a4a4a;
+  letter-spacing: -0.03em;
+}
+
+/* 11월 뱃지 (현재 미사용) */
+.month-status__badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 6px 14px;
+  border-radius: 999px;
+  background-color: #f0f0f0;
+  color: #5e5e5e;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+/* 자세히 보기 버튼 (현재 미사용) */
+.month-status__more-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 10px 18px;
+  border-radius: 999px;
+  border: 1px solid #d5d5d5;
+  background-color: #fff;
+  color: #5e5e5e;
+  font-weight: 600;
+  font-size: 14px;
+  cursor: pointer;
+  transition: border-color 0.2s ease, color 0.2s ease;
+}
+
+.month-status__more-btn:hover {
+  border-color: #2b2b2b;
+  color: #2b2b2b;
+}
+
+.month-status__more-icon {
+  font-size: 16px;
+  line-height: 1;
+}
+
+/* 상단 큰 카드 영역 */
+.month-status__summary-card {
+  width: 93%;
+  background-color: #f7f7f7;
+  border-radius: 28px;
+  padding: 36px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+/* 카드 상단 헤딩 영역 (11월 + 설명 텍스트) */
+.month-status__summary-heading {
+  display: flex;
+  align-items: flex-end;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+/* "11월" 큰 텍스트 */
+.month-status__summary-month {
+  font-size: 40px;
+  font-weight: 600;
+  color: #4a4a4a;
+  letter-spacing: -0.03em;
+}
+
+/* 설명 텍스트 */
+.month-status__summary-copy {
+  margin: 0;
+  font-size: 20px;
+  color: #5e5e5e;
+}
+
+/* 네 개의 지표(지출 건수 / 금액 / 가장 컸던 / 급상승) 가로 배치 */
+.month-status__summary-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  column-gap: 80px;
+  row-gap: 24px;
+}
+
+/* 각 지표 아이템 */
+.month-status__summary-item {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* 지표 라벨 */
+.month-status__summary-label {
+  margin: 0;
+  font-size: 18px;
+  color: #7d7d7d;
+  font-weight: 500;
+}
+
+/* 지표 값과 목표값 행 */
+.month-status__summary-value-row {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+  gap: 8px;
+}
+
+/* 지표 값 */
+.month-status__summary-value {
+  margin: 0;
+  font-size: 24px;
+  font-weight: 700;
+  color: #2b2b2b;
+  display: flex;
+  align-items: baseline;
+  gap: 4px;
+}
+
+/* 지표 단위 */
+.month-status__summary-unit {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+/* 목표값 표시 */
+.month-status__summary-target {
+  margin: 0;
+  font-size: 17px;
+  color: #b4b4b4;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.month-status__summary-target span {
+  display: inline-flex;
+}
+
+.month-status__summary-target-unit {
+  font-size: 16px;
+}
+
+/* 하이라이트 값 (주류, 카페 등) */
+.month-status__highlight {
+  margin: 0;
+  font-size: 24px;
+  font-weight: 700;
+  color: #2b2b2b;
+}
+
+/* 소비 평가 영역 */
+.month-status__insight {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/* 소비 평가 헤더 영역 */
+.month-status__insight-header {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* "소비 평가" 제목 */
+.month-status__insight-title {
+  margin: 0;
+  font-size: 22px;
+  font-weight: 600;
+  color: #4a4a4a;
+  letter-spacing: -0.03em;
+}
+
+/* "이번달에는 바쁘셨을 꺼라 믿어요!" 부제목 */
+.month-status__insight-sub {
+  margin: 0;
+  font-size: 28px;
+  font-weight: 700;
+  color: #2b2b2b;
+  letter-spacing: -0.03em;
+}
+
+/* 소비평가 카드 컨테이너 (세로 배치) */
+.month-status__insight-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/* 개별 소비평가 카드 (네모 컴포넌트) - 가로길이 조정은 여기서 width 값 수정 */
+.month-status__insight-card {
+  width: 94%; /* 가로길이를 줄이려면 이 값을 조정 (예: 80%, 90% 등) */
+  border-radius: 20px;
+  padding: 24px 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  box-shadow: none;
+}
+
+/* 나쁜 습관 카드 (빨간색 계열) */
+.month-status__insight-card--alert {
+  background-color: #ffeceb;
+  color: #2b2b2b;
+}
+
+/* 개선 제안 카드 (노란색 계열) */
+.month-status__insight-card--suggestion {
+  background-color: #fff4cf;
+  color: #2b2b2b;
+}
+
+/* 카드 상단 태그 */
+.month-status__insight-tag {
+  align-self: flex-start;
+  padding: 6px 14px;
+  border-radius: 999px;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.month-status__insight-card--alert .month-status__insight-tag {
+  background-color: #f35a4f;
+  color: #ffffff;
+}
+
+.month-status__insight-card--suggestion .month-status__insight-tag {
+  background-color: rgba(255, 255, 255, 0.9);
+  border-color: rgba(255, 255, 255, 0.9);
+  color: #2b2b2b;
+}
+
+/* 카드 메인 메시지 */
+.month-status__insight-message {
+  margin: 0;
+  font-size: 22px;
+  font-weight: 700;
+  color: #2b2b2b;
+}
+
+.month-status__insight-card--alert .month-status__insight-message {
+  color: #f35a4f;
+}
+
+/* 강조 텍스트 (60% 등) */
+.month-status__insight-highlight {
+  color: #f35a4f;
+  font-weight: 700;
+}
+
+/* 도움말 텍스트 */
+.month-status__insight-helper {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 500;
+  color: #2b2b2b;
+  opacity: 0.9;
+}
+
+/* 반응형 디자인 - 태블릿 */
+@media (max-width: 1024px) {
+  .month-status__summary-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    column-gap: 32px;
+  }
+}
+
+/* 반응형 디자인 - 모바일 */
+@media (max-width: 768px) {
+  .month-status__summary-card {
+    padding: 28px;
+  }
+
+  .month-status__summary-heading {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .month-status__summary-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    column-gap: 24px;
+  }
+
+  .month-status__summary-value-row {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+}
