@@ -1,0 +1,229 @@
+{
+    "api_info": {
+        "endpoint": "https://openapi.openbanking.or.kr/v2.0/account/transaction_list/fin_num",
+        "method": "GET"
+    },
+    "request": {
+        "headers": {
+            "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdWQiOiIxMTAxMDAwMDAwIiwic2NvcGUiOlsiaW5xdWlyeSJdLCJpc3MiOiJodHRwczovL3d3dy5vcGVuYmFua2luZy5vci5rciIsImV4cCI6MTU0ODY1MDE1MCwianRpIjoiNmUxYTk1NjAtMzU4Yi00N2IxLWEzYjUtNjBiMjE1MDQ2ZTczIn0.ZDk9LSlsZ_vXe3V0KPsXBR5Lq9eDvWzn-HmC2N7TqOc",
+            "Content-Type": "application/json; charset=UTF-8"
+        },
+        "parameters": {
+            "bank_tran_id": "F123456789U4BC34239Z",
+            "fintech_use_num": "120190910000000000000001",
+            "inquiry_type": "A",
+            "inquiry_base": "D",
+            "from_date": "20250101",
+            "from_time": "000000",
+            "to_date": "20250131",
+            "to_time": "235959",
+            "sort_order": "D",
+            "tran_dtime": "20250131143022",
+            "befor_inquiry_trace_info": ""
+        }
+    },
+    "response_success": {
+        "api_tran_id": "2ffd133a-d17a-431d-a6a5-4bc12345abcd",
+        "api_tran_dtm": "20250131143022567",
+        "rsp_code": "A0000",
+        "rsp_message": "정상처리되었습니다",
+        "bank_tran_id": "F123456789U4BC34239Z",
+        "bank_tran_date": "20250131",
+        "bank_code_tran": "097",
+        "bank_rsp_code": "000",
+        "bank_rsp_message": "정상",
+        "bank_name": "오픈은행",
+        "savings_bank_name": "",
+        "fintech_use_num": "120190910000000000000001",
+        "balance_amt": "2547800",
+        "page_record_cnt": "15",
+        "next_page_yn": "N",
+        "befor_inquiry_trace_info": "1T202501311",
+        "res_list": [
+            {
+                "tran_date": "20250131",
+                "tran_time": "143000",
+                "inout_type": "입금",
+                "tran_type": "이체",
+                "printed_content": "급여",
+                "tran_amt": "3000000",
+                "after_balance_amt": "2547800",
+                "branch_name": "본점"
+            },
+            {
+                "tran_date": "20250130",
+                "tran_time": "153522",
+                "inout_type": "출금",
+                "tran_type": "이체",
+                "printed_content": "월세",
+                "tran_amt": "800000",
+                "after_balance_amt": "-452200",
+                "branch_name": "본점"
+            },
+            {
+                "tran_date": "20250128",
+                "tran_time": "091230",
+                "inout_type": "출금",
+                "tran_type": "출금",
+                "printed_content": "ATM출금",
+                "tran_amt": "50000",
+                "after_balance_amt": "347800",
+                "branch_name": "강남점"
+            },
+            {
+                "tran_date": "20250125",
+                "tran_time": "174512",
+                "inout_type": "출금",
+                "tran_type": "카드결제",
+                "printed_content": "신용카드",
+                "tran_amt": "125000",
+                "after_balance_amt": "397800",
+                "branch_name": "본점"
+            },
+            {
+                "tran_date": "20250120",
+                "tran_time": "112045",
+                "inout_type": "입금",
+                "tran_type": "이체",
+                "printed_content": "홍길동",
+                "tran_amt": "100000",
+                "after_balance_amt": "522800",
+                "branch_name": "본점"
+            },
+            {
+                "tran_date": "20250118",
+                "tran_time": "203318",
+                "inout_type": "출금",
+                "tran_type": "이체",
+                "printed_content": "통신비",
+                "tran_amt": "89000",
+                "after_balance_amt": "422800",
+                "branch_name": "본점"
+            },
+            {
+                "tran_date": "20250115",
+                "tran_time": "140025",
+                "inout_type": "입금",
+                "tran_type": "현금",
+                "printed_content": "현금입금",
+                "tran_amt": "200000",
+                "after_balance_amt": "511800",
+                "branch_name": "서초점"
+            },
+            {
+                "tran_date": "20250112",
+                "tran_time": "093314",
+                "inout_type": "출금",
+                "tran_type": "자동이체",
+                "printed_content": "보험료",
+                "tran_amt": "150000",
+                "after_balance_amt": "311800",
+                "branch_name": "본점"
+            },
+            {
+                "tran_date": "20250110",
+                "tran_time": "182507",
+                "inout_type": "출금",
+                "tran_type": "이체",
+                "printed_content": "김철수",
+                "tran_amt": "50000",
+                "after_balance_amt": "461800",
+                "branch_name": "본점"
+            },
+            {
+                "tran_date": "20250108",
+                "tran_time": "151233",
+                "inout_type": "입금",
+                "tran_type": "이체",
+                "printed_content": "배당금",
+                "tran_amt": "45000",
+                "after_balance_amt": "511800",
+                "branch_name": "본점"
+            },
+            {
+                "tran_date": "20250105",
+                "tran_time": "104418",
+                "inout_type": "출금",
+                "tran_type": "카드결제",
+                "printed_content": "신용카드",
+                "tran_amt": "78500",
+                "after_balance_amt": "466800",
+                "branch_name": "본점"
+            },
+            {
+                "tran_date": "20250103",
+                "tran_time": "192245",
+                "inout_type": "출금",
+                "tran_type": "이체",
+                "printed_content": "공과금",
+                "tran_amt": "135000",
+                "after_balance_amt": "545300",
+                "branch_name": "본점"
+            },
+            {
+                "tran_date": "20250102",
+                "tran_time": "080512",
+                "inout_type": "입금",
+                "tran_type": "이체",
+                "printed_content": "이자",
+                "tran_amt": "3200",
+                "after_balance_amt": "680300",
+                "branch_name": "본점"
+            },
+            {
+                "tran_date": "20250101",
+                "tran_time": "235900",
+                "inout_type": "출금",
+                "tran_type": "자동이체",
+                "printed_content": "적금",
+                "tran_amt": "500000",
+                "after_balance_amt": "677100",
+                "branch_name": "본점"
+            },
+            {
+                "tran_date": "20250101",
+                "tran_time": "120000",
+                "inout_type": "입금",
+                "tran_type": "이체",
+                "printed_content": "세뱃돈",
+                "tran_amt": "100000",
+                "after_balance_amt": "1177100",
+                "branch_name": "본점"
+            }
+        ]
+    },
+    "response_error_example": {
+        "api_tran_id": "3fed244b-e28b-542e-b7b6-71cd35670def",
+        "api_tran_dtm": "20250131143022567",
+        "rsp_code": "A0003",
+        "rsp_message": "해당 핀테크이용번호는 등록되지 않았습니다",
+        "bank_tran_id": "",
+        "bank_tran_date": "",
+        "bank_code_tran": "",
+        "bank_rsp_code": "",
+        "bank_rsp_message": ""
+    },
+    "notes": {
+        "inquiry_type": {
+            "A": "전체 (입금+출금)",
+            "I": "입금만",
+            "O": "출금만"
+        },
+        "inquiry_base": {
+            "D": "일자기준 조회",
+            "T": "시간기준 조회"
+        },
+        "sort_order": {
+            "D": "내림차순 (최신순)",
+            "A": "오름차순 (과거순)"
+        },
+        "common_response_codes": {
+            "A0000": "정상처리",
+            "A0001": "거래고유번호(참가기관) 오류",
+            "A0002": "핀테크이용번호 오류",
+            "A0003": "핀테크이용번호 미등록",
+            "A0004": "등록된 계좌와 실명번호 불일치",
+            "A0005": "API 이용기관 정보 오류"
+        }
+    }
+}
