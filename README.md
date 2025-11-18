@@ -34,7 +34,10 @@ npm run dev     # (Vite 기반일 경우)
 # 또는
 npm start       # (CRA 기반일 경우)
 
-## 3. 폴더 구
+---
+
+## 2. 실행 방법
+
 Consumption_Navigator/
 ├── public/                  # 정적 파일 (favicon, index.html 등)
 ├── src/
