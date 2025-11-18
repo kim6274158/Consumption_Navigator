@@ -77,4 +77,4 @@ AI와 데이터 기반 기술을 활용하여 국민 개개인이 소비를 투�
 4.  카드사, 금융기관의 데이터 기반 맞춤서비스 활성화 및 **신규 수익 채널 개척**.
 
 ## 7. 참고 및 추가 자료
-* **상세 기획서 및 도표**: [Google Drive Link](https://drive.google.com/drive/folders/1WVIsGlanOs2W8s9ga0WwpAoaGC9hdV m?usp=sharing) 
+* **상세 기획서 및 도표**: [Google Drive Link](https://drive.google.com/drive/folders/1WVIsGIanOs2W8s9ga0WwpAoaGC9hdV_m?usp=sharing) 
